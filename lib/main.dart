@@ -14,8 +14,17 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        appBar: AppBar(title: const Center(child: Text('Ricky & Morty'))),
-      ),
+          appBar: AppBar(title: const Center(child: Text('Ricky & Morty'))),
+          body: Center(
+              child: Container(
+            height: 100,
+            width: 300,
+            margin: const EdgeInsets.all(8),
+            child: ElevatedButton(
+                onPressed: () {},
+                child: const Text('All characters',
+                    style: TextStyle(fontSize: 30))),
+          ))),
     );
   }
 }
