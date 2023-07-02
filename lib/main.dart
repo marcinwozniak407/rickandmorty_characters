@@ -13,7 +13,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Scaffold(),
+      home: Scaffold(
+        appBar: AppBar(title: const Center(child: Text('Ricky & Morty'))),
+      ),
     );
   }
 }
