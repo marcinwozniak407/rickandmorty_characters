@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
 import '../all characters page/all_characters_page.dart';
+import '../favourite characters page/favourite_characters_page.dart';
 
 class FirstPage extends StatelessWidget {
   const FirstPage({
@@ -41,7 +41,13 @@ class FirstPage extends StatelessWidget {
               width: 300,
               margin: const EdgeInsets.all(8),
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const FavouriteCharactersPage(),
+                    ),
+                  );
+                },
                 child: const Text(
                   'Favourite characters',
                   style: TextStyle(fontSize: 30),
